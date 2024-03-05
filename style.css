@@ -1,0 +1,153 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.8%;
+}
+
+body {
+    font-family: 'Bebas Neue', cursive;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.hide {
+    display: none;
+}
+
+.car_game {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://wallpaperaccess.com/full/4107772.jpg");
+    background-size: 100% 100%;
+}
+
+/*.start_screen {
+    color: white;
+    font-size: 3rem;
+} */
+
+.car {
+    height: 90px;
+    width: 60px;
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    background: url("images/maincar2.jpg");
+    border-radius: 20%;
+    background-size: 100% 100%;
+}
+
+.enemy {
+    height: 90px;
+    width: 60px;
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    background: url("images/enemy.png");
+    border-radius: 20%;
+    background-size: 100% 100%;
+}
+
+
+.gamearea {
+    margin: auto;
+    width: 414px;
+    height: 100vh;
+    background-color: rgb(54, 61, 80);
+    position: relative;
+    overflow: hidden;
+    border-left: 7px dashed #c8d6e5;
+    border-right: 7px dashed #c8d6e5;
+
+    /* z-index: 0; */
+}
+
+.lines {
+    width: 10px;
+    height: 100px;
+    background-color: white;
+    margin-left: 195px;
+    position: absolute;
+}
+
+.start_screen {
+    position: absolute;
+    height: 10rem;
+    width: 60rem;
+    font-size: 2rem;
+    box-shadow: 2px 2px 4px #c8d6e5;
+    text-align: center;
+    color: white;
+    letter-spacing: 2;
+    word-spacing: 3;
+    background-color: tomato;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.score {
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+    width: 25rem;
+    line-height: 8rem;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: turquoise;
+    box-shadow: 2px 2px 2px rgb(38, 149, 138);
+
+}
+
+.logo {
+    position: absolute;
+    /* right: 50rem; */
+    right: 5rem;
+    top: 5rem;
+    height: 30rem;
+    width: 35rem;
+    animation: logo 2s ease infinite;
+}
+
+@keyframes logo {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.2, 1.2);
+
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+
+}
+
+
+.audio_div {
+    position: absolute;
+    bottom: 5rem;
+    left: 3rem;
+    padding: 3rem;
+}
+
+.audio_div span {
+    font-size: 3rem;
+    color: white;
+}
+
+.fa-volume-up {
+    font-size: 4rem;
+    color: cyan;
+}
